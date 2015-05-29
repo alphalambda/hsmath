@@ -1,0 +1,4 @@
+#!/bin/sh
+runghc ${1+"$@"}
+exit 0
+exec runhaskell ${1+"$@"}

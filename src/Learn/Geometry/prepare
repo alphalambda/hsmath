@@ -1,0 +1,4 @@
+#!/bin/sh
+for f in Drawing Exercises Geometry GeoSolver GeoUtils; do echo rm -f $f.hi $f.o; done > clean
+for f in demo*hs ex*hs; do g=`basename $f .hs`; echo rm -f $g $g.hi $g.o; done >> clean
+for f in demo*hs ex*hs; do g=`basename $f .hs`; echo ghc $f; done > build

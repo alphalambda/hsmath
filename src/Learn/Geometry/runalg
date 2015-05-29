@@ -1,0 +1,5 @@
+#!/bin/sh
+cp global_algebra.hs global.hs
+runghc ${1+"$@"}
+exit 0
+exec runhaskell ${1+"$@"}
